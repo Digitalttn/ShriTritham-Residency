@@ -1,0 +1,111 @@
+/* Add to your stylesheet or in a styled component */
+
+.testimonial-section {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .testimonial-background {
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    color: #fff;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonial-item {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .testimonial-item img {
+    max-width: 100px;
+    border-radius: 50%;
+  }
+  
+  .rating-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .star-rating {
+    font-size: 1.2em;
+    color: gold;
+  }
+  
+  .star-rating .filled {
+    color: gold;
+  }
+ /* Glitch Animation for Text */
+.glitch {
+  position: relative;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.glitch::before,
+.glitch::after {
+  content: 'Exclusive Offer 3';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  clip: rect(0, 100%, 0, 0);
+  animation: glitch-skew 2s infinite ease-in-out alternate-reverse;
+}
+
+.glitch::before {
+  left: -2px;
+  text-shadow: -2px 0 red;
+  animation: glitch-skew 0.3s infinite alternate-reverse;
+}
+
+.glitch::after {
+  left: 2px;
+  text-shadow: 2px 0 blue;
+  animation: glitch-skew 0.5s infinite alternate-reverse;
+}
+
+/* Image glitch effect */
+@keyframes glitch-skew {
+  0% {
+    clip: rect(0, 9999px, 0, 0);
+    transform: skew(0.5deg);
+  }
+  20% {
+    clip: rect(100px, 9999px, 0, 0);
+    transform: skew(1.5deg);
+  }
+  40% {
+    clip: rect(50px, 9999px, 0, 0);
+    transform: skew(-1deg);
+  }
+  60% {
+    clip: rect(200px, 9999px, 0, 0);
+    transform: skew(0.5deg);
+  }
+  80% {
+    clip: rect(150px, 9999px, 0, 0);
+    transform: skew(1deg);
+  }
+  100% {
+    clip: rect(50px, 9999px, 0, 0);
+    transform: skew(0);
+  }
+}
+
+  
